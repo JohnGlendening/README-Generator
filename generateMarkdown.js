@@ -1,32 +1,35 @@
-function generateMarkdown(data) {
+function generateMarkdown(data, githubInfo) {
     return `
-# Project Title : ${data.title}
-## Project Description:
-${data.desc}
-## Table of Contents
-* [Installation](#installation)
-* [Usage](#usage)
-* [Contributing](#contributing)
-* [Test](#test)
-* [Questions](#questions)
-* [License](#license)
-* [Author] (#Author)
-* [Badges](#badges)
+# **${data.title}**
+${data.badge}
+## Description 
+${data.description}
+## Table of contents
+- [Description](#Description)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Licence](#Licence)
+- [Contributors](#Contributors)
+- [Test](#Test)
+- [Repository Link](#Repository)
+- [GitHub Info](#GitHub) 
 ## Installation
-${data.install}
+        ${data.installation}
 ## Usage
 ${data.usage}
+## Licence
+${data.licence}
 ## Contributors
-${data.contributors}
+${data.contributing}
 ## Test
 ${data.test}
-## Questions
-If you have any questions, contact ${data.username} on GitHub.
-## License
-## Author 
-![GitHub profile pic](${data.image})
-## Badges
-![badmath](https://img.shields.io/github/repo-size/${data.username}/${data.repo})
+## Repository
+- [Project Repo](${data.repo})
+## GitHub
+![Image of me](${githubInfo.githubImage})
+- ${githubInfo.name}
+- [GitHub Profile](${githubInfo.profile})
+- <${githubInfo.email}>
 `;
 }
 
