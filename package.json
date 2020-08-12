@@ -1,25 +1,23 @@
 {
-    "name": "read.me",
+    "name": "goodreadmegenerator",
     "version": "1.0.0",
-    "description": "This is a simple application that allows you to build a readme file from the command line.",
+    "description": "to create a read me generator",
     "main": "index.js",
-    "dependencies": {
-        "badge-maker": "^3.2.0",
-        "esm": "^3.2.25",
-        "inquirer": "^7.3.3"
-    },
-    "devDependencies": {},
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/JoePall/read.me.git"
+        "url": "git+https://github.com/JohnGlendening/GoodReadMeGenerator.git"
     },
-    "author": "Josiah Powell",
+    "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/JoePall/read.me/issues"
+        "url": "https://github.com/JohnGlendening/GoodReadMeGenerator/issues"
     },
-    "homepage": "https://github.com/JoePall/read.me#readme"
+    "homepage": "https://github.com/JohnGlendening/GoodReadMeGenerator#readme",
+    "dependencies": {
+        "axios": "^0.19.2",
+        "inquirer": "^7.3.3"
+    }
 }
